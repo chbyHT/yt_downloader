@@ -33,21 +33,32 @@ npm install
 
 ### 2. 下載必要工具
 
+> **重要提示**：由於檔案體積較大，`ffmpeg.exe` 和 `yt-dlp.exe` 不包含在此專案的 Git 版本控制中。
+> 您需要自行下載這些檔案並放置到 `bin/` 資料夾中。
+
 #### yt-dlp
-從 [yt-dlp releases](https://github.com/yt-dlp/yt-dlp/releases) 下載 `yt-dlp.exe`，放置到 `bin/` 資料夾中。
+1. 前往 [yt-dlp releases](https://github.com/yt-dlp/yt-dlp/releases/latest)
+2. 下載 `yt-dlp.exe`
+3. 將檔案放置到專案的 `bin/` 資料夾中
 
 #### ffmpeg
-從 [ffmpeg builds](https://www.gyan.dev/ffmpeg/builds/) 下載 ffmpeg，解壓後將 `ffmpeg.exe` 放置到 `bin/` 資料夾中。
+1. 前往 [ffmpeg builds](https://www.gyan.dev/ffmpeg/builds/)
+2. 下載 `ffmpeg-release-essentials.zip`
+3. 解壓縮後，從 `bin` 資料夾中找到 `ffmpeg.exe`
+4. 將 `ffmpeg.exe` 放置到專案的 `bin/` 資料夾中
 
-**專案結構：**
+**完成後的專案結構：**
 ```
 yt_downloader/
 ├── bin/
-│   ├── yt-dlp.exe
-│   └── ffmpeg.exe
+│   ├── README.md         # 下載說明
+│   ├── yt-dlp.exe       # 需自行下載
+│   └── ffmpeg.exe       # 需自行下載
 ├── src/
 └── package.json
 ```
+
+> 💡 詳細的下載步驟請參考 [`bin/README.md`](bin/README.md)
 
 ### 3. 啟動開發模式
 
