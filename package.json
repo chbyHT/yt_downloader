@@ -1,11 +1,14 @@
 {
   "name": "yt-downloader",
+  "description": "A simple YouTube video downloader",
+  "author": "Jason",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "electron-vite dev",
     "build": "electron-vite build",
-    "preview": "electron-vite preview"
+    "preview": "electron-vite preview",
+    "dist": "npm run build && electron-builder"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.2",
@@ -37,5 +40,5 @@
     "vite-plugin-electron": "^0.28.6",
     "vite-plugin-electron-renderer": "^0.14.5"
   },
-  "main": "dist-electron/main/index.js"
+  "main": "out/main/index.js"
 }

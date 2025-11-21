@@ -1,15 +1,23 @@
 // @see - https://www.electron.build/configuration/configuration
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  "appId": "YourAppID",
+  "appId": "com.electron.ytdownloader",
   "asar": true,
-  "productName": "YourAppName",
+  "productName": "YT Downloader",
   "directories": {
     "output": "release/${version}"
   },
   "files": [
-    "dist",
-    "dist-electron"
+    "out"
+  ],
+  "extraResources": [
+    {
+      "from": "bin",
+      "to": "bin",
+      "filter": [
+        "**/*"
+      ]
+    }
   ],
   "mac": {
     "target": [

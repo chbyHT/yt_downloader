@@ -12,6 +12,7 @@ dist
 dist-ssr
 dist-electron
 out
+release
 *.local
 
 # Binaries (users need to download these)
@@ -28,3 +29,6 @@ bin/*.exe
 *.njsproj
 *.sln
 *.sw?
+
+# Electron Builder Cache
+.eb-cache
